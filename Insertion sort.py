@@ -26,7 +26,8 @@ def insertion_sort(arr):
 
 # Example usage:
 if __name__ == "__main__":
-    sample_array = [31, 41,59,26,41,58]
+    user_input = input("Input number separated by commas; ")
+    sample_array = list(map(int, user_input.split(",")))
     print("Original array:", sample_array)
     insertion_sort(sample_array)
     print("\nSorted array:", sample_array)
