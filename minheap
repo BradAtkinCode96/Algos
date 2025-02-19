@@ -1,0 +1,17 @@
+import heapq
+import itertools
+
+# Given list
+nums = [7, 5, 3, 9, 4, 6, 2, 8]
+
+# Function to generate a min heap
+def get_min_heap(nums):
+    heapq.heapify(nums)  # Transform into a valid min heap
+    return nums
+
+# Generate a min heap for the given list
+min_heap = nums[:]
+heapq.heapify(min_heap)
+
+# Display the heap as a list (array representation of a binary heap)
+print(min_heap)
